@@ -3,8 +3,8 @@ package org.ims.core;
 public class Clothing extends Item {
     private String size;
 
-    public Clothing( String itemName, double price, int quantity, String size) {
-        super(itemName, price, quantity);
+    public Clothing(String itemId, String itemName, double price, int quantity, String size) {
+        super(itemId,itemName, price, quantity);
         this.size = size;
     }
 

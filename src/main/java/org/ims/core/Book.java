@@ -3,8 +3,8 @@ package org.ims.core;
 public class Book extends Item {
     private String author;
 
-    public Book(String itemName, double price, int quantity, String author) {
-        super(itemName, price, quantity);
+    public Book(String itemId, String itemName, double price, int quantity, String author) {
+        super(itemId,itemName, price, quantity);
         this.author = author;
     }
 

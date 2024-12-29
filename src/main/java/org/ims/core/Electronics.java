@@ -3,8 +3,8 @@ package org.ims.core;
 public class Electronics extends Item{
     private int warranty;
 
-    public Electronics(String itemName, double price, int quantity, int warranty) {
-        super(itemName, price, quantity);
+    public Electronics(String itemId,String itemName, double price, int quantity, int warranty) {
+        super(itemId, itemName, price, quantity);
         this.warranty = warranty;
     }
 

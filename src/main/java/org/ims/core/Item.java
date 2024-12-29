@@ -1,29 +1,29 @@
 package org.ims.core;
 
 public class Item implements Comparable<Item> {
-    private  int itemId =0;
+    private  String itemId ;
     private String itemName;
     private double price;
     private int quantity;
 
 
 
-    public Item(String itemName, double price, int quantity) {
-        this.itemId = generateItemId();
+    public Item(String itemId,String itemName, double price, int quantity) {
+        this.itemId = itemId;
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
     }
 
-    private int generateItemId(){
+   /* private int generateItemId(){
         return this.itemId++;
-    }
+    }*/
 
-    public int getItemId() {
+    public String getItemId() {
         return itemId;
     }
 
-    public void setItemId(int itemId) {
+    public void setItemId(String itemId) {
         this.itemId = itemId;
     }
 
